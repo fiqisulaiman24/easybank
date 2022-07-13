@@ -294,7 +294,7 @@ a.navbar-item:hover {
         display: none;
     }
     .hero.is-fullheight.easybank-hero{
-        min-height: 85vh;
+        min-height: 90vh;
     }
     .hero.is-fullheight.easybank-hero .hero-body, .hero.is-fullheight-with-navbar .hero-body, .hero.is-halfheight .hero-body{
         align-items: flex-end;
@@ -314,7 +314,7 @@ a.navbar-item:hover {
     .easybank-hero:after{
         background: url("../images/bg-intro-mobile.svg");
         position: absolute;
-        top: -45px;
+        top: -42px;
         background-size: contain;
         background-repeat: no-repeat;
         width: 100%;
@@ -322,8 +322,9 @@ a.navbar-item:hover {
     }
     .easybank-mockup{
         right: 0;
-        top: -152px;
+        top: -372px;
         width: 100%;
+        background-size: contain;
     }
     .easybank-section-heading{
         text-align: center;
