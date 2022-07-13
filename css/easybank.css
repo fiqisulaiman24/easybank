@@ -324,7 +324,7 @@ a.navbar-item:hover {
         right: 0;
         top: -372px;
         width: 100%;
-        background-size: cover;
+        background-size: contain;
     }
     .easybank-section-heading{
         text-align: center;
