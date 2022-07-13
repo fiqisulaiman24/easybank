@@ -294,7 +294,7 @@ a.navbar-item:hover {
         display: none;
     }
     .hero.is-fullheight.easybank-hero{
-        min-height: 86vh;
+        min-height: 80vh;
     }
     .hero.is-fullheight.easybank-hero .hero-body, .hero.is-fullheight-with-navbar .hero-body, .hero.is-halfheight .hero-body{
         align-items: flex-end;
