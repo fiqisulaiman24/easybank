@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;600;700&display=swap');
+:root{
+    /* Primary */
+    --eb-dark-blue: hsl(233, 26%, 24%);
+    --eb-lime-green: hsl(136, 65%, 51%);
+    --eb-bright-cyan: hsl(192, 70%, 51%);
+    /* Neutral */
+    --eb-grayish-blue: hsl(233, 8%, 62%);
+    --eb-light-grayish-blue: hsl(220, 16%, 96%);
+    --eb-light-gray: hsl(0, 0%, 98%);
+    --eb-white: hsl(0, 0%, 100%);
+    /* Font */
+    --eb-font: "Public Sans",sans-serif;
+}
+
+*,
+*:before,
+*:after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    font-family: var(--eb-font);
+}
+
+/* UI COMPONENT */
+.easybank-section-heading h2{
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.5;
+    color: var(--eb-dark-blue);
+    margin-bottom: 14px;
+}
+.easybank-section-heading p{
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--eb-grayish-blue);
+    width: 57%;
+    margin-bottom: 14px;
+}
+
+/* Navbar */
+.easybank-navbar{
+    padding: 8px 0px;
+}
+
+.navbar-burger{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-burger:hover{
+    background: var(--eb-white);
+}
+
+.navbar-start .navbar-item, .navbar-link {
+    color: var(--eb-grayish-blue);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.navbar-start .navbar-link.is-active, 
+.navbar-link:focus, 
+.navbar-link:focus-within, 
+.navbar-link:hover, 
+a.navbar-item.is-active, 
+a.navbar-item:focus, 
+a.navbar-item:focus-within, 
+a.navbar-item:hover {
+    background-color: transparent;
+    color: var(--eb-grayish-blue);
+    position: relative;
+}
+
+.btn-requestinvite{
+    font-weight: 700;
+    background-image: linear-gradient(
+                        90deg,
+                        hsl(136deg 85% 51%) 0%,
+                        hsl(164deg 68% 51%) 50%,
+                        hsl(192deg 70% 51%) 100%);
+    border-radius: 100px;
+    border: 0;
+    padding: 22px 34px;
+    color: var(--eb-grayish-blue);
+    position: relative;
+}
+
+.btn-requestinvite:hover:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 100px;
+}
+
+.btn-requestinvite span{
+    font-size: 15px;
+    color: var(--eb-white);
+}
+
+/* Hero */
+.easybank-hero{
+    position: relative;
+    background: var(--eb-light-gray);
+}
+
+.easybank-hero:after{
+    content: "";
+    position: absolute;
+    background-image: url("../images/bg-intro-desktop.svg");
+    width: 815px;
+    height: 1960px;
+    right: 0;
+    bottom: 0;
+}
+
+.easybank-mockup{
+    background: url("../images/image-mockups.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 60%;
+    height: 935px;
+    position: absolute;
+    z-index: 1;
+    right: -135px;
+    top: -108px;
+}
+
+.easybank-hero-content{
+    position: relative;
+}
+
+.easybank-hero-content h1{
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 66px;
+    color: var(--eb-dark-blue);
+    margin-bottom: 18px;
+}
+.easybank-hero-content p{
+    font-weight: 400;
+    font-size: 18px;
+    width: 80%;
+    color: var(--eb-grayish-blue);
+    margin-bottom: 28px;
+}
+
+/* Section Features Marketing */
+.easybank-marketing{
+    padding: 105px 24px;
+    background: var(--eb-light-grayish-blue);
+}
+
+.easybank-marketing-features{
+    margin-top: 52px;
+}
+
+.easybank-marketing-content img{
+    margin-top: 6px;
+    margin-bottom: 18px;
+}
+.easybank-marketing-content h3{
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--eb-dark-blue);
+    line-height: normal;
+    margin-bottom: 24px;
+}
+.easybank-marketing-content p{
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--eb-grayish-blue);
+}
+
+/* Section Blog */
+.easybank-article{
+    padding: 105px 24px;
+    background: var(--eb-light-gray);
+}
+
+.easybank-article-list{
+    margin-top: 8px;
+}
+
+.card.easybank-article-card{
+    box-shadow: 0px 0px 6px -4px rgb(0 0 0 / 15%);
+}
+
+.card.easybank-article-card .card-content{
+    padding: 19px;
+}
+
+.content.easybank-article-content .easybank-author{
+    font-weight: 600;
+    font-size: 10.6px;
+    color: var(--eb-grayish-blue);
+    margin-bottom: 8px;
+}
+
+.content.easybank-article-content h4{
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+    color: var(--eb-dark-blue);
+    width: 80%;
+}
+
+.content.easybank-article-content p{
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--eb-grayish-blue);
+}
+
+/* Footer */
+.footer.easybank-footer{
+    background: var(--eb-dark-blue);
+    padding: 3rem 1.5rem 1.5rem;
+}
+
+.easybank-socialcontact{
+    display: flex;
+    align-items:center;
+    margin-top: 48px;
+}
+
+.easybank-socialcontact li{
+    margin-right: 14px;
+}
+
+.easybank-footer-logo img{
+    width: 155px;
+    filter: brightness(10);
+}
+
+.easybank-socialmedia-icon{
+    width: 22px;
+}
+
+.easybank-socialcontact .easybank-socialmedia-icon:hover{
+    filter: invert(66%) sepia(66%) saturate(544%) hue-rotate(79deg) brightness(175%) contrast(87%);
+    transition: .25s all;
+}
+
+.easybank-footer-link li{
+    margin-top: 2px;
+    margin-bottom: 14px;
+}
+
+.easybank-footer-link li a{
+    color: var(--eb-light-grayish-blue);
+    font-size: 16px;
+}
+
+.easybank-footer-link li a:hover{
+    color: var(--eb-lime-green);
+    transition: .25s all;
+}
+
+.easybank-footer-cta{
+    text-align: right;
+}
+
+.easybank-copyright{
+    color: var(--eb-grayish-blue);
+    text-align: right;
+    margin-top: 36px;
+    font-size: 16px;
+}
+
+.attribution{
+    font-size: 14px;
+    text-align: center;
+    color: var(--eb-light-grayish-blue);
+}
+
+.attribution a{
+    color: var(--eb-lime-green);
+}
+
+@media only screen and (max-width: 1024px){
+    .navbar-burger.is-active{
+        background: url("../images/icon-close.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .navbar-burger.is-active > img{
+        display: none;
+    }
+    .hero.is-fullheight.easybank-hero{
+        min-height: 85vh;
+    }
+    .hero.is-fullheight.easybank-hero .hero-body, .hero.is-fullheight-with-navbar .hero-body, .hero.is-halfheight .hero-body{
+        align-items: flex-end;
+    }
+    .easybank-hero-content{
+        text-align: center;
+    }
+    .easybank-hero-content h1{
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .easybank-hero-content p{
+        font-size: 16px;
+        width: 100%;
+        line-height: 28px;
+    }
+    .easybank-hero:after{
+        background: url("../images/bg-intro-mobile.svg");
+        position: absolute;
+        top: -45px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+    }
+    .easybank-mockup{
+        right: 0;
+        top: -152px;
+        width: 100%;
+    }
+    .easybank-section-heading{
+        text-align: center;
+    }
+    .easybank-section-heading h2{
+        font-size: 32px;
+        line-height: 38px;
+    }
+    .easybank-section-heading p{
+        text-align: center;
+        font-size: 16px;
+        line-height: 28px;
+        width: 100%;
+    }
+
+    .easybank-marketing{
+        padding: 65px 24px;
+    }
+    .easybank-marketing-content{
+        text-align: center;
+    }
+
+    .easybank-marketing-content h3{
+        font-size: 20px;
+    }
+
+    .content.easybank-article-content h4{
+        width: 100%;
+    }
+    .image.is-5by3.easybank-article-thumbnailsize{
+        padding-top: 202px;
+    }
+    .card.easybank-article-card .card-content{
+        padding: 32px;
+    }
+    .easybank-article-thumbnail{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .easybank-footer-logo{
+        text-align: center;
+    }
+
+    .easybank-socialcontact{
+        display: flex;
+        align-items: center;
+        margin-top: 22px;
+        justify-content: center;
+    }
+    
+    .easybank-socialcontact li{
+        margin: 0px 10px;
+    }
+
+    .easybank-footer-links-wrap{
+        text-align: center;
+    }
+    
+    .easybank-footer-links-wrap .column.is-4:nth-child(1){
+        padding-bottom: 0;
+    }
+    .easybank-footer-links-wrap .column.is-4:nth-child(2){
+        padding-top: 0;
+    }
+
+    .easybank-footer-cta{
+        text-align: center;
+    }
+    
+    .easybank-copyright{
+        text-align: center;
+    }
+}
