@@ -25,8 +25,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://fiqisulaiman24.github.io/easybank)
+- Live Site URL: [Here](https://fiqisulaiman24.github.io/easybank)
 
 ## My process
 
